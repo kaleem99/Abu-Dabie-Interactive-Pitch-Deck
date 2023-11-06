@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+body {
+  overflow: hidden;
+}
+.NavBar {
+  width: 25vw;
+  height: 100vh;
+  /* border: 1px solid #b3b3b3; */
+  background-color: #E7ECEF;
+  /* border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px; */
+}
+
+.Content {
+  width: 75vw;
+  height: 100vh;
+  /* border: 1px solid #B3B3B3; */
+}
+.NavigationBackAndNext {
+  width: 75vw;
+  height: 10vh;
+  /* border-top: 1px solid #b3b3b3; */
+}
+.InnerContent {
+  height: 90vh;
+  width: 75vw;
+}
