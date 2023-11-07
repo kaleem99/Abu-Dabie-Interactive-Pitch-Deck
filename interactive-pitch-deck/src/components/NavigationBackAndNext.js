@@ -1,7 +1,7 @@
 import Button from "./Button";
 import NavContentData from "../Content/NavContent";
 const data = ["Back", "Next"];
-const NavigationBackAndNext = ({ section, setSection }) => {
+const NavigationBackAndNext = ({ section, setSection, index, setIndex }) => {
   const checkCondition = (i) => {
     let Next = false;
     let Back = false;
@@ -21,10 +21,12 @@ const NavigationBackAndNext = ({ section, setSection }) => {
           return (
             <Button
               setSection={setSection}
-              check={checkCondition(i)[name]}
+              check={{ Next: "", Back: "" }}
               section={section}
               name={name}
               NavContentData={NavContentData}
+              index={index}
+              setIndex={setIndex}
             />
           );
         })}

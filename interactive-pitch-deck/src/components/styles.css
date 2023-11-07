@@ -1,8 +1,9 @@
 .ImageAndLogo {
-  width: 90%;
-  height: 100px;
-  margin: auto;
-  border-bottom: 1px solid;
+  width: 120px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 10%;
+  border: 3px solid;
   display: flex;
 }
 .imageLogo {
@@ -25,13 +26,13 @@
 .NavContentSections {
   width: 90%;
   text-align: left;
-  margin: auto;
+  margin: 30px auto;
   height: 40px;
   cursor: pointer;
   border: none;
   background-color: transparent;
   padding: 0px;
-  font-size: larger;
+  font-size: 14px;
 }
 .NavContentHover {
   color: #1176d3;
@@ -39,34 +40,71 @@
 .h3Heading {
   text-align: left;
   width: 90%;
-  margin: 10px auto 30px auto;
+  margin: 10px auto 10px auto;
   font-size: 25px;
 }
 .standardButton {
   width: 133px;
   height: 50px;
-  border-radius: 5px;
+  /* border-radius: 8px; */
   cursor: pointer;
   border: none;
   background-color: #2546f0;
   color: white;
+  font-weight: 800;
+  font-size: 14px;
+  margin: 0px auto;
 }
-.standardButton:nth-child(1){
-    margin-left: 40px;
-    margin-right: auto;
+.standardButton:nth-child(1) {
+  /* margin-left: 40px;
+    margin-right: auto; */
+  background-color: #e7ecef;
+  color: black;
 }
-.standardButton:nth-child(2){
-    margin-right: 40px;
-    margin-left: auto;
+.standardButton:nth-child(2) {
+  /* margin-right: 40px;
+    margin-left: auto; */
+  background-color: #1c1d21;
 }
 .standardButton:hover {
   background-color: #063461;
   color: white;
 }
 .innerNavBackAndNext {
-  width: 100%;
-  margin: auto;
+  width: 300px;
+  margin-right: 20px;
+  margin-left: auto;
   /* padding: 10px; */
   display: flex;
   height: 10vh;
+}
+.BreadCrumbsMenu {
+  width: 90%;
+  height: 60px;
+  /* border: 1px solid; */
+  margin: 10px auto;
+  font-size: 12px;
+  font-weight: 800;
+}
+.BoldHeading {
+  font-weight: 800;
+}
+.mainInnerContent {
+  width: 90%;
+  height: 75vh;
+  margin: auto;
+  /* border: 1px solid; */
+  overflow: auto;
+  text-align: left;
+  padding: 10px;
+}
+.mainInnerContentHeading {
+  font-size: 20px;
+  font-weight: 600;
+}
+.mainInnerContentData {
+  margin-top: 20px;
+}
+.innerContentAndHeading {
+  margin-top: 20px;
 }

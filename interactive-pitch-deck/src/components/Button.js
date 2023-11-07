@@ -1,6 +1,14 @@
 import "./styles.css";
 
-const Button = ({ name, check, setSection, NavContentData, section }) => {
+const Button = ({
+  name,
+  check,
+  setSection,
+  NavContentData,
+  section,
+  index,
+  setIndex,
+}) => {
   const buttonIsHovered = (e) => {
     e.target.style.backgroundColor = "#063461";
     e.target.style.color = "white";
@@ -10,24 +18,23 @@ const Button = ({ name, check, setSection, NavContentData, section }) => {
     e.target.style.color = "black";
   };
   const nextAndBack = (type) => {
-    let index = NavContentData.filter((data) => data.name === section)[0].id;
-
+    console.log(index, "100");
     if (type === "Next") {
       console.log(index);
-      if (index === NavContentData.length) {
-        index = 0;
+      if (index === 0) {
+        setIndex(index + 1);
       }
-      setSection(NavContentData[index].name);
     } else {
-      setSection(NavContentData[index - 2].name);
+      if (index > 0) {
+        setIndex(index - 1);
+      }
     }
   };
-  console.log(check, "CHECK", 100);
   return (
     <button
-      disabled={check}
-    //   onMouseOver={(e) => !check && buttonIsHovered(e)}
-    //   onMouseOut={(e) => !check && buttonIsNotHovered(e)}
+      // disabled={check}
+      //   onMouseOver={(e) => !check && buttonIsHovered(e)}
+      //   onMouseOut={(e) => !check && buttonIsNotHovered(e)}
       onClick={() => nextAndBack(name)}
       className="standardButton"
     >
