@@ -66,10 +66,15 @@
     margin-left: auto; */
   background-color: #1c1d21;
 }
-.standardButton:hover {
-  background-color: #063461;
+.standardButton:nth-child(1):hover {
+  background-color: #2546f0;
   color: white;
 }
+.standardButton:nth-child(2):hover {
+  background-color: #2546f0;
+  color: white;
+}
+
 .innerNavBackAndNext {
   width: 300px;
   margin-right: 20px;
