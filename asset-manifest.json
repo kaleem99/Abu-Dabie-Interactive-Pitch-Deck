@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Abu-Dabie-Interactive-Pitch-Deck/static/css/main.20b8f8aa.css",
-    "main.js": "/Abu-Dabie-Interactive-Pitch-Deck/static/js/main.167ca4a3.js",
+    "main.css": "/Abu-Dabie-Interactive-Pitch-Deck/static/css/main.763bac91.css",
+    "main.js": "/Abu-Dabie-Interactive-Pitch-Deck/static/js/main.2fdee5dc.js",
     "static/js/787.1b85928c.chunk.js": "/Abu-Dabie-Interactive-Pitch-Deck/static/js/787.1b85928c.chunk.js",
     "static/media/logo.svg": "/Abu-Dabie-Interactive-Pitch-Deck/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Abu-Dabie-Interactive-Pitch-Deck/index.html",
-    "main.20b8f8aa.css.map": "/Abu-Dabie-Interactive-Pitch-Deck/static/css/main.20b8f8aa.css.map",
-    "main.167ca4a3.js.map": "/Abu-Dabie-Interactive-Pitch-Deck/static/js/main.167ca4a3.js.map",
+    "main.763bac91.css.map": "/Abu-Dabie-Interactive-Pitch-Deck/static/css/main.763bac91.css.map",
+    "main.2fdee5dc.js.map": "/Abu-Dabie-Interactive-Pitch-Deck/static/js/main.2fdee5dc.js.map",
     "787.1b85928c.chunk.js.map": "/Abu-Dabie-Interactive-Pitch-Deck/static/js/787.1b85928c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20b8f8aa.css",
-    "static/js/main.167ca4a3.js"
+    "static/css/main.763bac91.css",
+    "static/js/main.2fdee5dc.js"
   ]
 }
