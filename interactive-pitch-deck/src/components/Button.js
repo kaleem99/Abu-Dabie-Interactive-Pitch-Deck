@@ -4,7 +4,7 @@ const Button = ({
   name,
   check,
   setSection,
-  NavContentData,
+  courseData,
   section,
   index,
   setIndex,
@@ -17,11 +17,13 @@ const Button = ({
     e.target.style.backgroundColor = "buttonface";
     e.target.style.color = "black";
   };
+
   const nextAndBack = (type) => {
-    console.log(index, "100");
+    console.log(index);
+    const contentSections = courseData.courseSections[0].unit.sections;
     if (type === "Next") {
       console.log(index);
-      if (index === 0) {
+      if (index < contentSections.length - 1) {
         setIndex(index + 1);
       }
     } else {

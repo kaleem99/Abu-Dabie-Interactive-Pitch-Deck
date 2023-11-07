@@ -76,6 +76,27 @@
           },
           {
             "id": 1,
+            "name": "Interactive infographic project planning aid",
+            "content": [
+              {
+                "name": "Interactive infographic",
+                "type": "string",
+                "data": ""
+              },
+              {
+                "name": " Project planning aid",
+                "type": "string",
+                "data": "As illustrated in the examples above, choosing a particular ML tool or application for your business project is a matter of understanding the problem and particularities of the data available to you. The three examples discussed are far from comprehensive, and your own projects may not fit neatly with any of these solutions. The following infographic illustrates a simplified flowchart that helps with the high level considerations involved in this decision making process."
+              },
+              {
+                "name": "",
+                "type": "link",
+                "data": "http://127.0.0.1:52873/preview/1F25B098-B928-4800-9F19-E32D98AF7920-19356-000000E3B3554F93/index.html"
+              }
+            ]
+          },
+          {
+            "id": 2,
             "name": "X.2 Reflection exercise: Planning your own project",
             "content": [
               {

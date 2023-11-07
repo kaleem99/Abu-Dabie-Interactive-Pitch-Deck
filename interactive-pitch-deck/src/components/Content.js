@@ -21,14 +21,10 @@ const Content = ({
   };
 
   const iframeStyle = {
-    width: "1216px", // Adjusted to occupy the div's scaled width
-    height: "790px", // Adjusted to occupy the div's scaled height
-    border: "none",
-    position: "absolute", // Position the iframe within the div
-    top: "0",
-    left: "0",
-    transform: "scale(0.8)", // Reverse the parent div's scale to maintain the iframe's original size
-    // transformOrigin: "0 0", // Set the transform origin to the top left
+    width: "1200px", // Fixed width of the website
+    height: "100%", // Fixed height of the website
+    border: "none", // No border to keep consistent with the container
+    // transform: "scale(0.8)", // Adjust the scale to fit the container size
   };
   console.log(contentDataSection);
   return (
@@ -46,13 +42,24 @@ const Content = ({
               <div className="innerContentAndHeading">
                 <span className="mainInnerContentHeading">{item.name}</span>
                 <div className="mainInnerContentData">
-                  {item.type === "string"
-                    ? item.data
-                    : item.data.map((cont, i) => (
-                        <p>
-                          {index === 1 && `${i + 1}.`} {cont}
-                        </p>
-                      ))}
+                  {item.type === "string" ? (
+                    item.data
+                  ) : item.type === "array" ? (
+                    item.data.map((cont, i) => (
+                      <p>
+                        {index === 1 && `${i + 1}.`} {cont}
+                      </p>
+                    ))
+                  ) : (
+                    <div className="iframeContent">
+                      <iframe
+                        title="EmbeddedWebsite"
+                        src={item.data} // Replace with the URL of the website you want to embed
+                        style={iframeStyle}
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  )}
                 </div>
               </div>
             );
@@ -64,6 +71,7 @@ const Content = ({
         section={section}
         setIndex={setIndex}
         index={index}
+        courseData={courseData}
       />
     </div>
   );

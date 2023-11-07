@@ -99,8 +99,9 @@
   height: 75vh;
   margin: auto;
   /* border: 1px solid; */
-  overflow: auto;
+  overflow-x: hidden;
   text-align: left;
+  overflow-y: auto;
   padding: 10px;
 }
 .mainInnerContentHeading {
@@ -112,4 +113,18 @@
 }
 .innerContentAndHeading {
   margin-top: 20px;
+}
+
+.iframeContent {
+  width: 1200px;
+  height: 700px;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center the iframe horizontally */
+  align-items: center; /* Center the iframe vertically */
+  transform: scale(0.8);
+  margin-left: -120px;
+  margin-top: -50px;
 }
