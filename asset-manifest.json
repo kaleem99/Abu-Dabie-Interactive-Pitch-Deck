@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Abu-Dhabi-Interactive-Pitch-Deck/static/css/main.8d2322ea.css",
-    "main.js": "/Abu-Dhabi-Interactive-Pitch-Deck/static/js/main.edb8032d.js",
+    "main.css": "/Abu-Dhabi-Interactive-Pitch-Deck/static/css/main.b4d62609.css",
+    "main.js": "/Abu-Dhabi-Interactive-Pitch-Deck/static/js/main.9ab795f1.js",
     "static/js/787.1b85928c.chunk.js": "/Abu-Dhabi-Interactive-Pitch-Deck/static/js/787.1b85928c.chunk.js",
     "static/media/NotoSans-Regular.ttf": "/Abu-Dhabi-Interactive-Pitch-Deck/static/media/NotoSans-Regular.c6776e8228bee1ff1106.ttf",
     "static/media/chatBot.png": "/Abu-Dhabi-Interactive-Pitch-Deck/static/media/chatBot.4b80fa964f076d9f4275.png",
     "static/media/Asset 10.svg": "/Abu-Dhabi-Interactive-Pitch-Deck/static/media/Asset 10.4ec2bc55927659f30e874dae826f3595.svg",
     "static/media/logo.svg": "/Abu-Dhabi-Interactive-Pitch-Deck/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Abu-Dhabi-Interactive-Pitch-Deck/index.html",
-    "main.8d2322ea.css.map": "/Abu-Dhabi-Interactive-Pitch-Deck/static/css/main.8d2322ea.css.map",
-    "main.edb8032d.js.map": "/Abu-Dhabi-Interactive-Pitch-Deck/static/js/main.edb8032d.js.map",
+    "main.b4d62609.css.map": "/Abu-Dhabi-Interactive-Pitch-Deck/static/css/main.b4d62609.css.map",
+    "main.9ab795f1.js.map": "/Abu-Dhabi-Interactive-Pitch-Deck/static/js/main.9ab795f1.js.map",
     "787.1b85928c.chunk.js.map": "/Abu-Dhabi-Interactive-Pitch-Deck/static/js/787.1b85928c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d2322ea.css",
-    "static/js/main.edb8032d.js"
+    "static/css/main.b4d62609.css",
+    "static/js/main.9ab795f1.js"
   ]
 }
