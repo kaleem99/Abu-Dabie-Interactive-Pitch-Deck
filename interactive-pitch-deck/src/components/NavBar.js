@@ -10,6 +10,7 @@ const NavBar = ({
   unitSection,
   index,
   setIndex,
+  setState,
 }) => {
   const [isHovered, setIsHovered] = useState(null);
   const handleHover = (index) => {
@@ -23,13 +24,16 @@ const NavBar = ({
   return (
     <div className="NavBar">
       {/* <div className="ImageAndLogo"> */}
-        {/* <span className="heading">LOGO</span> */}
+      {/* <span className="heading">LOGO</span> */}
       {/* </div> */}
       <div className="NavContent">
         {courseData.courseSections.map((data, i) => (
           <div className="NavContentSections">
             <div>
-              <span className="BoldHeading"> {data.name}</span>
+              <span className="BoldHeading" onClick={() => setState("Home")}>
+                {" "}
+                {data.name}
+              </span>
             </div>
             <br></br>
             <div>
@@ -62,34 +66,40 @@ const NavBar = ({
                       background: content.name === section ? "#2546F0" : "none",
                     }}
                   >
-                    <span style={{ marginLeft: "5%", width: "90%" }}>{content.name}</span>
+                    <span style={{ marginLeft: "5%", width: "90%" }}>
+                      {content.name}
+                    </span>
                   </button>
                   {content.name === section && (
                     <div>
-                      {content.content.map((item, subIndex) => (
-                        <button
-                          onClick={() => setIndex(subIndex)}
-                          style={{
-                            fontWeight: "600",
-                            marginTop: "12px",
-                            display: "flex",
-                            alignItems: "center", // Align content vertically
-                            textAlign: "left",
-                            height: "auto",
-                            width: "100%",
-                            marginLeft: "5.5%",
-                            border: "none",
-                            background: "none",
-                            cursor: "pointer",
-                            // fontFamily: "noto sans",
-                            fontSize: "14px",
-                            fontWeight: subIndex === index ? "bolder" : "400",
-                            opacity: subIndex === index ? "100%" : "90%",
-                          }}
-                        >
-                          <span style={{width: "95%"}}>{item.name}</span>
-                        </button>
-                      ))}
+                      {content.content.map(
+                        (item, subIndex) =>
+                          item.name !== "" && (
+                            <button
+                              onClick={() => setIndex(subIndex)}
+                              style={{
+                                fontWeight: "600",
+                                marginTop: "12px",
+                                display: "flex",
+                                alignItems: "center", // Align content vertically
+                                textAlign: "left",
+                                height: "auto",
+                                width: "100%",
+                                marginLeft: "5.5%",
+                                border: "none",
+                                background: "none",
+                                cursor: "pointer",
+                                // fontFamily: "noto sans",
+                                fontSize: "14px",
+                                fontWeight:
+                                  subIndex === index ? "bolder" : "400",
+                                opacity: subIndex === index ? "100%" : "90%",
+                              }}
+                            >
+                              <span style={{ width: "95%" }}>{item.name}</span>
+                            </button>
+                          )
+                      )}
                     </div>
                   )}
                 </div>

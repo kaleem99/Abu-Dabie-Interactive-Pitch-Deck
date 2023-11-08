@@ -30,6 +30,7 @@ function App() {
             setSection={setSection}
             setUnitSection={setUnitSection}
             unitSection={unitSection}
+            setState={setState}
           />
           <Content
             index={index}

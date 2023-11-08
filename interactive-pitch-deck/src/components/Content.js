@@ -7,7 +7,7 @@ const Content = ({
   contentDataSection,
   index,
   setIndex,
-  unitSection
+  unitSection,
 }) => {
   const divStyle = {
     width: "78vw",
@@ -63,7 +63,21 @@ const Content = ({
                 : contentDataSection[index].type === "object"
                 ? contentDataSection[index].data.map((data, i) =>
                     data.type === "string" ? (
-                      <p>{data.data}</p>
+                      <p
+                        style={
+                          data.style
+                            ? { border: "1px solid", padding: "10px" }
+                            : {}
+                        }
+                      >
+                        {data.data}
+                      </p>
+                    ) : data.type === "heading" ? (
+                      <h1 className="heading">{data.data}</h1>
+                    ) : data.type === "array" ? (
+                      data.data.map((line) => (
+                        <p dangerouslySetInnerHTML={{ __html: line }}></p>
+                      ))
                     ) : (
                       <div className="iframeContent">
                         <iframe

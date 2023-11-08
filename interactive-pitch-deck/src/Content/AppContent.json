@@ -62,14 +62,14 @@
                     "data": "https://kaleem99.github.io/hostingContents/Abu-Dabie-Interactive/Abu%20Dhabi%20interactive%20infographic.html"
                   },
                   {
-                    "type": "string",
+                    "type": "array",
                     "data": [
                       "The five broad categories of ML tools discussed in this course thus far are the following:",
-                      "Classification: Classification models are created from labeled datasets. These tools attempt to place new data into the categories defined when creating the model with the labeled data.",
-                      "Clustering: Clustering models are created from unlabelled datasets. These tools attempt to find groups of data points to cluster similarly and then fit new data into one of these clusters.",
-                      "Regression: Regression models are used to create predictive models with quantitative data that link an independent variable with several dependent variables that affect it.",
-                      "Sentiment analysis: Sentiment analysis is a machine learning tool that attempts to sort text data into positive, neutral, and negative categories. This is often used in the analysis of product reviews or satisfaction surveys.",
-                      " Topic modeling: Topic modeling tools attempt to scan sets of text for patterns of words or phrases that best categorize the content of the text data."
+                      "<b>Classification</b>: Classification models are created from labeled datasets. These tools attempt to place new data into the categories defined when creating the model with the labeled data.",
+                      "<b>Clustering</b>: Clustering models are created from unlabelled datasets. These tools attempt to find groups of data points to cluster similarly and then fit new data into one of these clusters.",
+                      "<b>Regression</b>: Regression models are used to create predictive models with quantitative data that link an independent variable with several dependent variables that affect it.",
+                      "<b>Sentiment analysis</b>: Sentiment analysis is a machine learning tool that attempts to sort text data into positive, neutral, and negative categories. This is often used in the analysis of product reviews or satisfaction surveys.",
+                      "<b>Topic modeling</b>: Topic modeling tools attempt to scan sets of text for patterns of words or phrases that best categorize the content of the text data."
                     ]
                   },
                   {
@@ -78,6 +78,7 @@
                   },
                   {
                     "type": "string",
+                    "style": "border: 1px solid",
                     "data": "Pick one of the ML categories listed above and do some research into specific tools and strategies that may fall under it. K-means clustering, for example, is just one of a number of clustering strategies. See if you can identify the particular nuances that differentiates these tools and which would be most applicable to a business objective in your context."
                   }
                 ]
@@ -101,11 +102,18 @@
             "name": "Prototype learning module: Reflection Exercise",
             "content": [
               {
-                "name": "Planning your project",
-                "type": "array",
+                "name": "",
+                "type": "object",
                 "data": [
-                  "Now that you have a better understanding of how to choose and implement an ML strategy for a particular business project, it is time to engage with this in practice. Below you will find a table that will guide you through the various steps and considerations required for determining the specific requirements of a ML project. Think about a particular business goal or problem you have encountered in your own context and fill out the table based on how you would tackle this challenge with ML.",
-                  "This table is also available in the course downloads folder for future reference and to use on projects you encounter throughout your career."
+                  { "type": "heading", "data": "Planning your project" },
+                  {
+                    "type": "string",
+                    "data": "Now that you have a better understanding of how to choose and implement an ML strategy for a particular business project, it is time to engage with this in practice. Below you will find a table that will guide you through the various steps and considerations required for determining the specific requirements of a ML project. Think about a particular business goal or problem you have encountered in your own context and fill out the table based on how you would tackle this challenge with ML."
+                  },
+                  {
+                    "type": "string",
+                    "data": "This table is also available in the course downloads folder for future reference and to use on projects you encounter throughout your career."
+                  }
                 ]
               }
             ]
@@ -115,35 +123,41 @@
             "name": "Additional modality examples",
             "content": [
               {
-                "name": "Didactic written components",
-                "type": "array",
+                "name": "",
+                "type": "object",
                 "data": [
-                  "Sample 1",
-                  "Sample 2"
-                ]
-              },
-              {
-                "name": "Social learning components",
-                "type": "array",
-                "data": [
-                  "Social learning components",
-                  ""
-                ]
-              },
-              {
-                "name": "Engagement and assessment components",
-                "type": "array",
-                "data": [
-                  "Engagement and assessment components",
-                  ""
-                ]
-              },
-              {
-                "name": "Creative components",
-                "type": "array",
-                "data": [
-                  "Creative components",
-                  ""
+                  {
+                    "type": "heading",
+                    "data": "Didactic written components"
+                  },
+                  {
+                    "type": "string",
+                    "data": "Didactic written components"
+                  },
+                  {
+                    "type": "heading",
+                    "data": "Social learning components"
+                  },
+                  {
+                    "type": "string",
+                    "data": "Social learning components"
+                  },
+                  {
+                    "type": "heading",
+                    "data": "Engagement and assessment components"
+                  },
+                  {
+                    "type": "string",
+                    "data": "Engagement and assessment components"
+                  },
+                  {
+                    "type": "heading",
+                    "data": "Creative components"
+                  },
+                  {
+                    "type": "string",
+                    "data": "Creative components"
+                  }
                 ]
               }
             ]

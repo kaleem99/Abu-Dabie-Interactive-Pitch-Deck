@@ -73,11 +73,11 @@
   background-color: #1c1d21;
 }
 .standardButton:nth-child(1):hover {
-  background-color: #b9bdbf;
+  background-color: #1C1D21;
   color: white;
 }
 .standardButton:nth-child(2):hover {
-  background-color: #606164;
+  background-color: #2546F0;
   color: white;
 }
 
