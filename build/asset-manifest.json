@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Abu-Dabie-Interactive-Pitch-Deck/static/css/main.463499f4.css",
+    "main.js": "/Abu-Dabie-Interactive-Pitch-Deck/static/js/main.455a6cb8.js",
+    "static/js/787.1b85928c.chunk.js": "/Abu-Dabie-Interactive-Pitch-Deck/static/js/787.1b85928c.chunk.js",
+    "static/media/NotoSans-Regular.ttf": "/Abu-Dabie-Interactive-Pitch-Deck/static/media/NotoSans-Regular.c6776e8228bee1ff1106.ttf",
+    "static/media/logo.svg": "/Abu-Dabie-Interactive-Pitch-Deck/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Abu-Dabie-Interactive-Pitch-Deck/index.html",
+    "main.463499f4.css.map": "/Abu-Dabie-Interactive-Pitch-Deck/static/css/main.463499f4.css.map",
+    "main.455a6cb8.js.map": "/Abu-Dabie-Interactive-Pitch-Deck/static/js/main.455a6cb8.js.map",
+    "787.1b85928c.chunk.js.map": "/Abu-Dabie-Interactive-Pitch-Deck/static/js/787.1b85928c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.463499f4.css",
+    "static/js/main.455a6cb8.js"
+  ]
+}
