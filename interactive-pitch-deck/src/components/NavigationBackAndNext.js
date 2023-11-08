@@ -1,4 +1,6 @@
 import Button from "./Button";
+import chatBotImage from "../Images/chatBot.png";
+
 const data = ["Back", "Next"];
 const NavigationBackAndNext = ({
   section,
@@ -47,6 +49,12 @@ const NavigationBackAndNext = ({
           );
         })}
       </div>
+      <img
+        style={{ marginBottom: "20px" }}
+        width={68}
+        height={68}
+        src={chatBotImage}
+      />
     </div>
   );
 };

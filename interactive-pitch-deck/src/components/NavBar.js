@@ -22,9 +22,9 @@ const NavBar = ({
   // console.log(courseData.courseSections);
   return (
     <div className="NavBar">
-      <div className="ImageAndLogo">
-        <span className="heading">LOGO</span>
-      </div>
+      {/* <div className="ImageAndLogo"> */}
+        {/* <span className="heading">LOGO</span> */}
+      {/* </div> */}
       <div className="NavContent">
         {courseData.courseSections.map((data, i) => (
           <div className="NavContentSections">
@@ -49,9 +49,12 @@ const NavBar = ({
                       display: "flex",
                       alignItems: "center",
                       textAlign: "left",
-                      height: "40px",
+                      height: "43px",
                       width: "111%",
-                      marginLeft: "-5.5%",
+                      paddingTop: "5px",
+                      paddingBottom: "5px",
+
+                      marginLeft: "-7%",
                       border: "none",
                       cursor: "pointer",
                       color: content.name === section ? "white" : "black",
@@ -59,7 +62,7 @@ const NavBar = ({
                       background: content.name === section ? "#2546F0" : "none",
                     }}
                   >
-                    <span style={{ marginLeft: "5%" }}>{content.name}</span>
+                    <span style={{ marginLeft: "5%", width: "90%" }}>{content.name}</span>
                   </button>
                   {content.name === section && (
                     <div>
@@ -68,21 +71,23 @@ const NavBar = ({
                           onClick={() => setIndex(subIndex)}
                           style={{
                             fontWeight: "600",
-                            marginTop: "0px",
+                            marginTop: "12px",
                             display: "flex",
                             alignItems: "center", // Align content vertically
                             textAlign: "left",
-                            height: "40px",
-                            width: "90%",
-                            marginLeft: "7.5%",
+                            height: "auto",
+                            width: "100%",
+                            marginLeft: "5.5%",
                             border: "none",
                             background: "none",
                             cursor: "pointer",
+                            // fontFamily: "noto sans",
                             fontSize: "14px",
                             fontWeight: subIndex === index ? "bolder" : "400",
+                            opacity: subIndex === index ? "100%" : "90%",
                           }}
                         >
-                          {item.name}
+                          <span style={{width: "95%"}}>{item.name}</span>
                         </button>
                       ))}
                     </div>

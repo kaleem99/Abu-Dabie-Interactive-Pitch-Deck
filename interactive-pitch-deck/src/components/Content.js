@@ -7,6 +7,7 @@ const Content = ({
   contentDataSection,
   index,
   setIndex,
+  unitSection
 }) => {
   const divStyle = {
     width: "78vw",
@@ -58,13 +59,9 @@ const Content = ({
               {contentDataSection[index].type === "string"
                 ? contentDataSection[index].data
                 : contentDataSection[index].type === "array"
-                ? contentDataSection[index].data.map((cont, i) => (
-                    <p>
-                      {index === 1 && `${i + 1}.`} {cont}
-                    </p>
-                  ))
+                ? contentDataSection[index].data.map((cont, i) => <p>{cont}</p>)
                 : contentDataSection[index].type === "object"
-                ? contentDataSection[index].data.map((data) =>
+                ? contentDataSection[index].data.map((data, i) =>
                     data.type === "string" ? (
                       <p>{data.data}</p>
                     ) : (
@@ -79,6 +76,220 @@ const Content = ({
                     )
                   )
                 : ""}
+
+              {unitSection === 1 && (
+                <table
+                  style={{
+                    width: "80%",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                  cellSpacing="0"
+                  cellPadding="5"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        style={{
+                          backgroundColor: "#2546f0",
+                          color: "#ffffff",
+                          width: "50%",
+                          borderRight: "1px solid #FFFFFF",
+                        }}
+                      >
+                        Technical requirements
+                      </td>
+                      <td
+                        style={{
+                          backgroundColor: "#2546f0",
+                          color: "#ffffff",
+                          width: "50%",
+                          borderLeft: "1px solid #FFFFFF",
+                        }}
+                      >
+                        Stakeholders and how to achieve buy-in
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          backgroundColor: "#e7ecef",
+                          width: "91.3136%",
+                        }}
+                        colSpan="2"
+                      >
+                        Define the objective/s of your machine learning project.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderRight: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderLeft: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          backgroundColor: "#e7ecef",
+                          width: "91.3136%",
+                        }}
+                        colSpan="2"
+                      >
+                        Establish your data requirements and how data will be
+                        accessed.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderRight: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderLeft: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          backgroundColor: "#e7ecef",
+                          width: "91.3136%",
+                        }}
+                        colSpan="2"
+                      >
+                        Establish how the acquired data will be processed.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderRight: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderLeft: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          backgroundColor: "#e7ecef",
+                          width: "91.3136%",
+                        }}
+                        colSpan="2"
+                      >
+                        Decide on which machine learning tool will be employed.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderRight: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderLeft: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          backgroundColor: "#e7ecef",
+                          width: "91.3136%",
+                        }}
+                        colSpan="2"
+                      >
+                        Outline the human resources requirements for the
+                        project.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderRight: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderLeft: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          backgroundColor: "#e7ecef",
+                          width: "91.3136%",
+                        }}
+                        colSpan="2"
+                      >
+                        Outline how the output of this project will be used to
+                        inform business decisions.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderRight: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                      <td
+                        style={{
+                          width: "50%",
+                          borderLeft: "1px solid #E7ECEF",
+                        }}
+                      >
+                        {" "}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              )}
             </div>
           </div>
           {/* ); */}

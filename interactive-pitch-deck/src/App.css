@@ -40,3 +40,16 @@ body {
   width: 90%;
   margin: auto;
 }
+
+button {
+  font-family: "Noto Sans", sans-serif;
+}
+.HomePage {
+  width: 100%;
+  height: 100vh;
+}
+.homepageImage{
+  width: 50%;
+  height: 200px;
+  margin: 100px auto;
+}

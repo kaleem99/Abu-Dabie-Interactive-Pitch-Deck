@@ -2,13 +2,13 @@
   "courseSections": [
     {
       "id": 1,
-      "name": "Module X: Strategic implementation of Machine Learning",
+      "name": "Home",
       "unit": {
-        "name": "Unit Y: Machine learning project planning",
+        "name": "Learning pathway",
         "sections": [
           {
             "id": 1,
-            "name": "X.1 Casebook",
+            "name": "Prototype learning module: Casebook",
             "content": [
               {
                 "name": "Introduction",
@@ -50,7 +50,7 @@
               },
 
               {
-                "name": ["Interactive infographic", " Project planning aid"],
+                "name": ["Interactive infographic:", " Project planning aid"],
                 "type": "object",
                 "data": [
                   {
@@ -60,6 +60,25 @@
                   {
                     "type": "link",
                     "data": "https://kaleem99.github.io/hostingContents/Abu-Dabie-Interactive/Abu%20Dhabi%20interactive%20infographic.html"
+                  },
+                  {
+                    "type": "string",
+                    "data": [
+                      "The five broad categories of ML tools discussed in this course thus far are the following:",
+                      "Classification: Classification models are created from labeled datasets. These tools attempt to place new data into the categories defined when creating the model with the labeled data.",
+                      "Clustering: Clustering models are created from unlabelled datasets. These tools attempt to find groups of data points to cluster similarly and then fit new data into one of these clusters.",
+                      "Regression: Regression models are used to create predictive models with quantitative data that link an independent variable with several dependent variables that affect it.",
+                      "Sentiment analysis: Sentiment analysis is a machine learning tool that attempts to sort text data into positive, neutral, and negative categories. This is often used in the analysis of product reviews or satisfaction surveys.",
+                      " Topic modeling: Topic modeling tools attempt to scan sets of text for patterns of words or phrases that best categorize the content of the text data."
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "data": "Each of these have multiple specialized applications and you can find more detailed information on them in the supplementary materials in the downloads folder. For now it is important to know what they are used for, and what the data and operational requirements are for each."
+                  },
+                  {
+                    "type": "string",
+                    "data": "Pick one of the ML categories listed above and do some research into specific tools and strategies that may fall under it. K-means clustering, for example, is just one of a number of clustering strategies. See if you can identify the particular nuances that differentiates these tools and which would be most applicable to a business objective in your context."
                   }
                 ]
               },
@@ -79,19 +98,52 @@
 
           {
             "id": 1,
-            "name": "X.2 Reflection exercise: Planning your own project",
+            "name": "Prototype learning module: Reflection Exercise",
             "content": [
               {
-                "name": "Description",
-                "type": "string",
-                "data": "In this exercise, students are prompted to reflect on how the content of this unit can be applied to their own organisational or business context to best leverage their resources to their needs for a machine learning-based project. Furthermore, they will not only consider their technical and resource needs for the project, but also how they can secure buy-in from relevant stakeholders at each step of the project."
-              },
-              {
-                "name": "Introduction",
+                "name": "Planning your project",
                 "type": "array",
                 "data": [
                   "Now that you have a better understanding of how to choose and implement an ML strategy for a particular business project, it is time to engage with this in practice. Below you will find a table that will guide you through the various steps and considerations required for determining the specific requirements of a ML project. Think about a particular business goal or problem you have encountered in your own context and fill out the table based on how you would tackle this challenge with ML.",
-                  "This table will also be available in the course downloads folder for future reference and to use on any projects you may encounter in your own career."
+                  "This table is also available in the course downloads folder for future reference and to use on projects you encounter throughout your career."
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Additional modality examples",
+            "content": [
+              {
+                "name": "Didactic written components",
+                "type": "array",
+                "data": [
+                  "Sample 1",
+                  "Sample 2"
+                ]
+              },
+              {
+                "name": "Social learning components",
+                "type": "array",
+                "data": [
+                  "Social learning components",
+                  ""
+                ]
+              },
+              {
+                "name": "Engagement and assessment components",
+                "type": "array",
+                "data": [
+                  "Engagement and assessment components",
+                  ""
+                ]
+              },
+              {
+                "name": "Creative components",
+                "type": "array",
+                "data": [
+                  "Creative components",
+                  ""
                 ]
               }
             ]
