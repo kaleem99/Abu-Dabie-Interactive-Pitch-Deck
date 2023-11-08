@@ -73,11 +73,11 @@
   background-color: #1c1d21;
 }
 .standardButton:nth-child(1):hover {
-  background-color: #1C1D21;
+  background-color: #1c1d21;
   color: white;
 }
 .standardButton:nth-child(2):hover {
-  background-color: #2546F0;
+  background-color: #2546f0;
   color: white;
 }
 
@@ -123,19 +123,52 @@
 }
 
 .iframeContent {
-  width: 1200px;
-  height: 700px;
-  /* border: 1px solid red; */
+  width: 100%;
+  max-height: 700px;
+  border: 1px solid;
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center; /* Center the iframe horizontally */
   align-items: center; /* Center the iframe vertically */
-  transform: scale(0.7);
-  margin-left: -180px;
-  margin-top: -105px;
+  /* transform: scale(0.7); */
+  /* margin-left: -180px; */
+  /* margin-top: -105px; */
 }
 .hyperLink {
   color: black;
   font-weight: bold;
+}
+
+.NavBarSectionNames {
+  float: left;
+  width: 22vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 45px;
+  text-align: right;
+}
+.spanSectionNames {
+  color: #1c1d21;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.spanSectionNames:nth-child(1) {
+  margin-left: 20px;
+}
+.settingSectionNames {
+  height: 45px;
+  float: right;
+  width: 10vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  cursor: pointer;
 }

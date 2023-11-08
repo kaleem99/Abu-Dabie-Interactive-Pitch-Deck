@@ -13,19 +13,23 @@ const BreadCrumbs = ({ courseData, section, contentDataSection, index }) => {
             height: "60px",
           }}
         >
-          <span>{data.name}</span>
-          <span
-            style={{
-              marginTop: "auto",
-              fontSize: "larger",
-              justifyContent: "center",
-              marginBottom: "auto",
-              alignItems: "center",
-              display: "flex",
-            }}
-          >
-            <BsDot />
-          </span>
+          {data.name !== "" && (
+            <>
+              <span>{data.name}</span>
+              <span
+                style={{
+                  marginTop: "auto",
+                  fontSize: "larger",
+                  justifyContent: "center",
+                  marginBottom: "auto",
+                  alignItems: "center",
+                  display: "flex",
+                }}
+              >
+                <BsDot />
+              </span>
+            </>
+          )}
           <span>{data.unit.name}</span>
           <span
             style={{
@@ -40,19 +44,23 @@ const BreadCrumbs = ({ courseData, section, contentDataSection, index }) => {
             <BsDot />
           </span>
           <span>{section}</span>
-          <span
-            style={{
-              marginTop: "auto",
-              fontSize: "larger",
-              justifyContent: "center",
-              marginBottom: "auto",
-              alignItems: "center",
-              display: "flex",
-            }}
-          >
-            <BsDot />
-          </span>
-          <span>{contentDataSection[index].name}</span>
+          {contentDataSection[index].name !== "" && (
+            <>
+              <span
+                style={{
+                  marginTop: "auto",
+                  fontSize: "larger",
+                  justifyContent: "center",
+                  marginBottom: "auto",
+                  alignItems: "center",
+                  display: "flex",
+                }}
+              >
+                <BsDot />
+              </span>
+              <span>{contentDataSection[index].name}</span>
+            </>
+          )}
         </div>
       ))}
     </div>
