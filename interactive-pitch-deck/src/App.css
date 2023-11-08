@@ -37,5 +37,6 @@ body {
 }
 .InnerContent {
   height: 90vh;
-  width: 78vw;
+  width: 90%;
+  margin: auto;
 }

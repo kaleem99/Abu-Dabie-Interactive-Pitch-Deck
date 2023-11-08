@@ -9,6 +9,7 @@ const NavBar = ({
   setUnitSection,
   unitSection,
   index,
+  setIndex,
 }) => {
   const [isHovered, setIsHovered] = useState(null);
   const handleHover = (index) => {
@@ -38,6 +39,7 @@ const NavBar = ({
                   <button
                     onClick={() => {
                       // setIndex(i);
+                      setIndex(0);
                       setUnitSection(i);
                       setSection(content.name);
                     }}
@@ -53,7 +55,7 @@ const NavBar = ({
                       border: "none",
                       cursor: "pointer",
                       color: content.name === section ? "white" : "black",
-
+                      fontSize: "14px",
                       background: content.name === section ? "#2546F0" : "none",
                     }}
                   >
@@ -63,6 +65,7 @@ const NavBar = ({
                     <div>
                       {content.content.map((item, subIndex) => (
                         <button
+                          onClick={() => setIndex(subIndex)}
                           style={{
                             fontWeight: "600",
                             marginTop: "0px",
@@ -70,11 +73,12 @@ const NavBar = ({
                             alignItems: "center", // Align content vertically
                             textAlign: "left",
                             height: "40px",
-                            width: "85%",
+                            width: "90%",
                             marginLeft: "7.5%",
                             border: "none",
                             background: "none",
                             cursor: "pointer",
+                            fontSize: "14px",
                             fontWeight: subIndex === index ? "bolder" : "400",
                           }}
                         >

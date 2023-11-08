@@ -11,23 +11,6 @@
             "name": "X.1 Casebook",
             "content": [
               {
-                "name": "Description",
-                "type": "string",
-                "data": "This casebook explores three case studies. ach different set of circumstances where machine learning was needed and used, as well as the key considerations around each instance (such as the data source, data preparation, the tools used, the human resources employed, the output of the project, and the business outcome of the project). Furthermore, each case study explores how the subjects got buy-in for their particular projects from different stakeholders at different levels of the process."
-              },
-              {
-                "name": "Content outline",
-                "type": "array",
-                "data": [
-                  "Introduction",
-                  "Case 1: Supervised clustering\nThis example should explore a project that uses supervised machine learning in clustering data. The focus should be using k-means clustering.",
-                  "Case 2: Supervised categorising\nThis example should explore a project that uses supervised machine learning in categorising labelled data.",
-                  "Case 3: Unsupervised sentiment analysis\nThis example should explore the use of unsupervised machine learning to perform sentiment analysis on text-based data.",
-                  "Interactive infographic\nThis interactive infographic takes the form of an interactive flowchart to aid in the planning of a machine learning project.",
-                  "Conclusion"
-                ]
-              },
-              {
                 "name": "Introduction",
                 "type": "array",
                 "data": [
@@ -67,17 +50,28 @@
               },
 
               {
-                "name": ["Interactive infographic", "Project planning aid"],
+                "name": ["Interactive infographic", " Project planning aid"],
                 "type": "object",
                 "data": [
                   {
                     "type": "string",
-                    "data": "As illustrated in the examples above, choosing a particular ML tool or application for your business project is a matter of understanding the problem and particularities of the data available to you. The three examples discussed are far from comprehensive, and your own projects may not fit neatly with any of these solutions. The following infographic illustrates a simplified flowchart that helps with the high level considerations involved in this decision making process."
+                    "data": "Choosing a particular ML tool or application for your business project is a matter of understanding the problem and particularities of the data available to you. The three examples discussed are far from comprehensive, and your projects may not fit neatly with any of these solutions. The following infographic illustrates a simplified flowchart that helps with the high-level considerations involved in this decision-making process."
                   },
                   {
                     "type": "link",
                     "data": "https://kaleem99.github.io/hostingContents/Abu-Dabie-Interactive/Abu%20Dhabi%20interactive%20infographic.html"
                   }
+                ]
+              },
+              {
+                "name": "Conclusion",
+                "type": "array",
+                "data": [
+                  "Implementing ML into your business or using it for a particular project isn’t a simple case of plug-and-play. There are many aspects to consider when choosing a suitable strategy and it requires a solid understanding of not only your goals but also the data requirements and the personnel needed to meet those requirements. If you consider these questions well and understand the various moving parts, you will be well on your way to improving your business through the use of these diverse and useful tools. In the next activity, you will have the opportunity to practice this thinking for yourself, bringing together all that you have learned in this course so far.",
+                  "Bibliography",
+                  "Dorfman, A. n.d. 5 real-world sentiment analysis use cases. Available: https://reputation.com/resources/articles/5-real-world-sentiment-analysis-use-cases/ [2023, November 7].",
+                  "Sagar, A. 2019. Customer segmentation using k-means clustering. Available: https://towardsdatascience.com/customer-segmentation-using-k-means-clustering-d33964f238c3 [2023, November 7].",
+                  "SixSigma. n.d. Supervised and unsupervised AI training with a case study. Available: https://www.sixsigmacertificationcourse.com/supervised-and-unsupervised-ai-training-with-a-case-study/ [2023, November 7]."
                 ]
               }
             ]
