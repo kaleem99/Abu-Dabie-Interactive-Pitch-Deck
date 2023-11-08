@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+  /* Add other variations (e.g., bold, italic, etc.) if needed */
+}
+
 .App {
   text-align: center;
   width: 100vw;
@@ -6,12 +12,13 @@
 }
 body {
   overflow: hidden;
+  font-family: "Noto Sans", sans-serif;
 }
 .NavBar {
   width: 22vw;
   height: 100vh;
   /* border: 1px solid #b3b3b3; */
-  background-color: #E7ECEF;
+  background-color: #e7ecef;
   /* border-top-right-radius: 16px;
   border-bottom-right-radius: 16px; */
 }
@@ -22,10 +29,11 @@ body {
   /* border: 1px solid #B3B3B3; */
 }
 .NavigationBackAndNext {
-  width: 78vw;
+  width: 90%;
   height: 10vh;
   display: flex;
-  /* border-top: 1px solid #b3b3b3; */
+  /* border: 1px solid #b3b3b3; */
+  margin: auto;
 }
 .InnerContent {
   height: 90vh;

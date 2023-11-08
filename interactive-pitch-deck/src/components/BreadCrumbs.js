@@ -1,6 +1,7 @@
 import { BsDot } from "react-icons/bs";
 
-const BreadCrumbs = ({ courseData, section, contentDataSection }) => {
+const BreadCrumbs = ({ courseData, section, contentDataSection, index }) => {
+  console.log(section);
   return (
     <div className="BreadCrumbsMenu">
       {courseData.courseSections.map((data) => (
@@ -13,14 +14,45 @@ const BreadCrumbs = ({ courseData, section, contentDataSection }) => {
           }}
         >
           <span>{data.name}</span>
-          <span style={{ fontSize: "larger" }}>
+          <span
+            style={{
+              marginTop: "auto",
+              fontSize: "larger",
+              justifyContent: "center",
+              marginBottom: "auto",
+              alignItems: "center",
+              display: "flex",
+            }}
+          >
             <BsDot />
           </span>
           <span>{data.unit.name}</span>
-          <span style={{ fontSize: "larger" }}>
+          <span
+            style={{
+              marginTop: "auto",
+              fontSize: "larger",
+              justifyContent: "center",
+              marginBottom: "auto",
+              alignItems: "center",
+              display: "flex",
+            }}
+          >
             <BsDot />
           </span>
-          <span>{contentDataSection.name}</span>
+          <span>{section}</span>
+          <span
+            style={{
+              marginTop: "auto",
+              fontSize: "larger",
+              justifyContent: "center",
+              marginBottom: "auto",
+              alignItems: "center",
+              display: "flex",
+            }}
+          >
+            <BsDot />
+          </span>
+          <span>{contentDataSection[index].name}</span>
         </div>
       ))}
     </div>

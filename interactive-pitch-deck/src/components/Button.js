@@ -8,21 +8,13 @@ const Button = ({
   section,
   index,
   setIndex,
+  contentDataSection,
 }) => {
-  const buttonIsHovered = (e) => {
-    e.target.style.backgroundColor = "#063461";
-    e.target.style.color = "white";
-  };
-  const buttonIsNotHovered = (e) => {
-    e.target.style.backgroundColor = "buttonface";
-    e.target.style.color = "black";
-  };
-
+  
   const nextAndBack = (type) => {
-    console.log(index);
-    const contentSections = courseData.courseSections[0].unit.sections;
+    const contentSections = contentDataSection;
+    console.log(index, contentDataSection)
     if (type === "Next") {
-      console.log(index);
       if (index < contentSections.length - 1) {
         setIndex(index + 1);
       }

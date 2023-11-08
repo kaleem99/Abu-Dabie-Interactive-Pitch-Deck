@@ -8,8 +8,13 @@ import courseData from "./Content/AppContent.json";
 
 function App() {
   const [index, setIndex] = useState(0);
-  const [section, setSection] = useState("");
-  const contentDataSection = courseData.courseSections[0].unit.sections[index];
+  const [unitSection, setUnitSection] = useState(0);
+  const [section, setSection] = useState(
+    courseData.courseSections[0].unit.sections[unitSection].name
+  );
+  const contentDataSection =
+    courseData.courseSections[0].unit.sections[unitSection].content;
+  console.log(contentDataSection);
   return (
     <div className="App">
       <NavBar
@@ -17,6 +22,8 @@ function App() {
         setIndex={setIndex}
         section={section}
         setSection={setSection}
+        setUnitSection={setUnitSection}
+        unitSection={unitSection}
       />
       <Content
         index={index}
