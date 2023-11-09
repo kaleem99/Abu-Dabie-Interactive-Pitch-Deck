@@ -15,6 +15,10 @@
                 "type": "object",
                 "data": [
                   {
+                    "type": "string",
+                    "data": "The interactive infographic below showcases the Data Science Learning Pathway, contextualizing the Leadership skill in relation to the role of the Data Science Leader."
+                  },
+                  {
                     "type": "link",
                     "data": "https://kaleem99.github.io/Hype-Templates/Abu%20Dhabi%20example%20interactive.html"
                   }

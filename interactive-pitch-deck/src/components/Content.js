@@ -106,7 +106,7 @@ const Content = ({
                     ) : data.type === "Carousel" ? (
                       <HorizontalCarousel />
                     ) : data.type === "table" ? (
-                      unitSection === 1 && <ReflectionTable />
+                       <ReflectionTable />
                     ) : (
                       <div className="iframeContent">
                         <iframe
