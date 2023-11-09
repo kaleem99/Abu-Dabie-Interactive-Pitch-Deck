@@ -45,8 +45,8 @@ function App() {
                 onClick={() => setBar(true)}
                 style={{
                   width: "50px",
-                  height: "52px",
-                  fontSize: "40px",
+                  height: "42px",
+                  fontSize: "30px",
                   position: "absolute",
                   left: 12,
                   top: 50,

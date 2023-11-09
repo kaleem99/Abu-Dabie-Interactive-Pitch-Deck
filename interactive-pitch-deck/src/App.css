@@ -66,10 +66,41 @@ button {
 .homepageImage {
   width: 50%;
   height: 200px;
-  margin: 100px auto;
+  margin: 100px auto auto;
 }
 
 td {
   height: 30px;
   border: 1px solid #e7ecef;
+}
+.homepageHeading {
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.homepageLODiv {
+  width: 659px;
+  height: 38px;
+  background: #d9d9d9;
+}
+.homepageLO {
+  font-weight: 800;
+}
+.homepageLearningOutcomes {
+  border: 1px solid #1c1d21;
+  width: 659px;
+  height: auto;
+  margin: 20px auto;
+}
+.homepageLearningOutcomesInnerDiv{
+  text-align: left;
+  padding: 10px;
+}
+.homepageLearningOutcomesInnerDiv > p{
+  margin-block-start: 10px;
+  
 }

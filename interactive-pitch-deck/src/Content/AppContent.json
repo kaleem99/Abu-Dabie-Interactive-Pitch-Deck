@@ -4,20 +4,58 @@
       "id": 1,
       "name": "",
       "unit": {
-        "name": "Learning pathway",
+        "name": "",
         "sections": [
           {
             "id": 1,
+            "name": "Learning pathway",
+            "content": [
+              {
+                "name": "",
+                "type": "object",
+                "data": [
+                  {
+                    "type": "link",
+                    "data": "https://kaleem99.github.io/Hype-Templates/Abu%20Dhabi%20example%20interactive.html"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
             "name": "Prototype learning module: Casebook",
             "content": [
               {
                 "name": "Introduction",
-                "type": "array",
+                "type": "object",
                 "data": [
-                  "You may already be familiar with the principles of effective management decision-making and have a high level understanding of machine learning (ML), including the potential benefits this technology could have for your organization. This casebook brings these two topics together to help you learn how to choose the right machine learning tool for a particular task.",
-                  "Recall that the most important aspect when developing a project strategy is to fully understand the problem you are trying to solve; the same goes for ML projects. There are many ML tools available, each with distinct capabilities and requirements. As such, you must first determine and understand the specific objectives of a project before considering your options. It’s also necessary to consider the available data. While it is always possible to do extra data collection to fit a given purpose, it is often more effective to work with what you have rather than embarking on costly and time-consuming data gathering efforts. ",
-                  "Once you have a solid understanding of your problem, your goals, and the resources available, you can start developing your ML strategy. But it is not as simple as plugging one in and hoping for the best. Since each tool has different data requirements, you have to determine what additional data you may need and consider how the data, new or old, should be processed for the strategy to be effective. This will inevitably require input from various teams within the business, who may, in turn, require their own considerations and resources to work effectively.",
-                  "All these factors need to be accounted for and included in the project plan alongside a prediction for how the output of this project will be used to inform business decisions. In the next few sections, we will outline three fictional case studies that cover these nuances and interconnected decisions to illustrate how this process works in practice."
+                  {
+                    "type": "string",
+                    "name": "",
+                    "data": "You may already be familiar with the principles of effective management decision-making and have a high level understanding of machine learning (ML), including the potential benefits this technology could have for your organization. This casebook brings these two topics together to help you learn how to choose the right machine learning tool for a particular task."
+                  },
+                  {
+                    "type": "string",
+                    "style": "border",
+                    "name": "",
+                    "data": "<b>Additional reading</b>:<br><br> If you are unfamiliar with these topics, consult the supplementary materials in the downloads folder to bring you up to speed."
+                  },
+                  {
+                    "type": "string",
+                    "name": "",
+                    "data": "Recall that the most important aspect when developing a project strategy is to fully understand the problem you are trying to solve; the same goes for ML projects. There are many ML tools available, each with distinct capabilities and requirements. As such, you must first determine and understand the specific objectives of a project before considering your options. It’s also necessary to consider the available data. While it is always possible to do extra data collection to fit a given purpose, it is often more effective to work with what you have rather than embarking on costly and time-consuming data gathering efforts."
+                  },
+                  {
+                    "type": "string",
+                    "name": "",
+                    "data": "Once you have a solid understanding of your problem, your goals, and the resources available, you can start developing your ML strategy. But it is not as simple as plugging one in and hoping for the best. Since each tool has different data requirements, you have to determine what additional data you may need and consider how the data, new or old, should be processed for the strategy to be effective. This will inevitably require input from various teams within the business, who may, in turn, require their own considerations and resources to work effectively."
+                  },
+                  {
+                    "type": "string",
+                    "name": "",
+                    "data": "All these factors need to be accounted for and included in the project plan alongside a prediction for how the output of this project will be used to inform business decisions. In the next few sections, we will outline three fictional case studies that cover these nuances and interconnected decisions to illustrate how this process works in practice."
+                  }
                 ]
               },
               {
@@ -62,14 +100,19 @@
                     "data": "https://kaleem99.github.io/Hype-Templates/Abu%20Dhabi%20interactive%20infographic.html"
                   },
                   {
+                    "type": "hyperlink",
+                    "data": "#",
+                    "name": "Click here to download the transcript for the interactive infographic."
+                  },
+                  {
                     "type": "array",
                     "data": [
                       "The five broad categories of ML tools discussed in this course thus far are the following:",
-                      "<b>Classification</b>: Classification models are created from labeled datasets. These tools attempt to place new data into the categories defined when creating the model with the labeled data.",
-                      "<b>Clustering</b>: Clustering models are created from unlabelled datasets. These tools attempt to find groups of data points to cluster similarly and then fit new data into one of these clusters.",
-                      "<b>Regression</b>: Regression models are used to create predictive models with quantitative data that link an independent variable with several dependent variables that affect it.",
-                      "<b>Sentiment analysis</b>: Sentiment analysis is a machine learning tool that attempts to sort text data into positive, neutral, and negative categories. This is often used in the analysis of product reviews or satisfaction surveys.",
-                      "<b>Topic modeling</b>: Topic modeling tools attempt to scan sets of text for patterns of words or phrases that best categorize the content of the text data."
+                      "<ol>1. <b>Classification</b>: Classification models are created from labeled datasets. These tools attempt to place new data into the categories defined when creating the model with the labeled data.",
+                      "<ol>2. <b>Clustering</b>: Clustering models are created from unlabelled datasets. These tools attempt to find groups of data points to cluster similarly and then fit new data into one of these clusters.",
+                      "<ol>3. <b>Regression</b>: Regression models are used to create predictive models with quantitative data that link an independent variable with several dependent variables that affect it.",
+                      "<ol>4. <b>Sentiment analysis</b>: Sentiment analysis is a machine learning tool that attempts to sort text data into positive, neutral, and negative categories. This is often used in the analysis of product reviews or satisfaction surveys.",
+                      "<ol>5. <b>Topic modeling</b>: Topic modeling tools attempt to scan sets of text for patterns of words or phrases that best categorize the content of the text data."
                     ]
                   },
                   {
@@ -79,40 +122,62 @@
                   {
                     "type": "string",
                     "style": "border",
-                    "data": "Pick one of the ML categories listed above and do some research into specific tools and strategies that may fall under it. K-means clustering, for example, is just one of a number of clustering strategies. See if you can identify the particular nuances that differentiates these tools and which would be most applicable to a business objective in your context."
+                    "data": "<b>Pause and reflect</b>:<br><br>Pick one of the ML categories listed above and do some research into specific tools and strategies that may fall under it. K-means clustering, for example, is just one of a number of clustering strategies. See if you can identify the particular nuances that differentiate these tools and which would be most applicable to a business objective in your context."
                   }
                 ]
               },
               {
                 "name": "Conclusion",
-                "type": "array",
+                "type": "object",
                 "data": [
-                  "Implementing ML into your business or using it for a particular project isn’t a simple case of plug-and-play. There are many aspects to consider when choosing a suitable strategy and it requires a solid understanding of not only your goals but also the data requirements and the personnel needed to meet those requirements. If you consider these questions well and understand the various moving parts, you will be well on your way to improving your business through the use of these diverse and useful tools. In the next activity, you will have the opportunity to practice this thinking for yourself, bringing together all that you have learned in this course so far.",
-                  "Bibliography",
-                  "Dorfman, A. n.d. 5 real-world sentiment analysis use cases. Available: https://reputation.com/resources/articles/5-real-world-sentiment-analysis-use-cases/ [2023, November 7].",
-                  "Sagar, A. 2019. Customer segmentation using k-means clustering. Available: https://towardsdatascience.com/customer-segmentation-using-k-means-clustering-d33964f238c3 [2023, November 7].",
-                  "SixSigma. n.d. Supervised and unsupervised AI training with a case study. Available: https://www.sixsigmacertificationcourse.com/supervised-and-unsupervised-ai-training-with-a-case-study/ [2023, November 7]."
+                  {
+                    "name": "",
+                    "type": "string",
+                    "data": "Implementing ML into your business or using it for a particular project isn’t a simple case of plug-and-play. There are many aspects to consider when choosing a suitable strategy and it requires a solid understanding of not only your goals but also the data requirements and the personnel needed to meet those requirements. If you consider these questions well and understand the various moving parts, you will be well on your way to improving your business through the use of these diverse and useful tools. In the next activity, you will have the opportunity to practice this thinking for yourself, bringing together all that you have learned in this course so far."
+                  },
+                  { "name": "", "type": "heading", "data": "Bibliography" },
+                  {
+                    "name": "",
+                    "type": "string",
+                    "data": "Dorfman, A. n.d. <i>5 real-world sentiment analysis use cases.</i> Available:<br> &emsp;&emsp;&emsp; https://reputation.com/resources/articles/5-real-world-sentiment-analysis-use-cases/ [2023, November 7]."
+                  },
+                  {
+                    "name": "",
+                    "type": "string",
+                    "data": "Sagar, A. 2019. <i>Customer segmentation using k-means clustering.</i> Available:<br> &emsp;&emsp;&emsp; https://towardsdatascience.com/customer-segmentation-using-k-means-clustering-d33964f238c3 [2023, November 7]."
+                  },
+                  {
+                    "name": "",
+                    "type": "string",
+                    "data": "SixSigma. n.d. <i>Supervised and unsupervised AI training with a case study.</i> Available:<br> &emsp;&emsp;&emsp; https://www.sixsigmacertificationcourse.com/supervised-and-unsupervised-ai-training-with-a-case-study/ [2023, November 7]."
+                  }
                 ]
               }
             ]
           },
 
           {
-            "id": 1,
-            "name": "Prototype learning module: Reflection Exercise",
+            "id": 2,
+            "name": "Prototype learning module: Reflection exercise",
             "content": [
               {
                 "name": "",
                 "type": "object",
                 "data": [
-                  { "type": "heading", "data": "Planning your project" },
+                  { "type": "subheading", "data": "Planning your project" },
                   {
                     "type": "string",
-                    "data": "Now that you have a better understanding of how to choose and implement an ML strategy for a particular business project, it is time to engage with this in practice. Below you will find a table that will guide you through the various steps and considerations required for determining the specific requirements of a ML project. Think about a particular business goal or problem you have encountered in your own context and fill out the table based on how you would tackle this challenge with ML."
+                    "data": "Now that you have a better understanding of how to choose and implement an ML strategy for a particular business project, it is time to engage with this in practice. The table below will guide you through the various steps and considerations required for determining the specific requirements of an ML project. Think about a particular business goal or problem you have encountered in your context and fill out the table based on how you would tackle this challenge with ML."
                   },
                   {
                     "type": "string",
                     "data": "This table is also available in the course downloads folder for future reference and to use on projects you encounter throughout your career."
+                  },
+                  { "type": "table", "data": "ReflectionTable()" },
+                  {
+                    "type": "hyperlink",
+                    "data": "Resource_example_1.pdf",
+                    "name": "Click here to download the resources."
                   }
                 ]
               }
@@ -120,6 +185,59 @@
           },
           {
             "id": 2,
+            "name": "Prototype learning module: Class-wide discussion",
+            "content": [
+              {
+                "name": "",
+                "type": "object",
+                "data": [
+                  { "type": "heading", "data": "Class-wide discussion" },
+                  {
+                    "type": "string",
+                    "data": "In this component, students are prompted to discuss their reflection in the previous activity with their fellow participants to encourage and facilitate discussion across the student group, share ideas, and gain further insights into applications they may have not considered or the unique requirements of different contexts."
+                  },
+                  {
+                    "type": "string",
+                    "data": "Summarize the plan you developed in the reflection activity making sure to address the following prompts:"
+                  },
+                  {
+                    "type": "string",
+                    "data": "<ul><li>What is the problem you are trying to solve? What are the main objectives for this project?</li>"
+                  },
+                  {
+                    "type": "string",
+                    "data": "<ul><li>What ML strategy did you decide on for this project? Why do you believe it to be the best option?</li>"
+                  },
+                  {
+                    "type": "string",
+                    "data": "<ul><li>What are the main data and human resource requirements for effective implementation of your chosen strategy?</li>"
+                  },
+                  {
+                    "type": "string",
+                    "data": "Share your plan in the discussion forum, taking some time to read and provide feedback on other participants’ submissions."
+                  },
+                  {
+                    "type": "string",
+                    "data": "<b>Note</b>: <br><br>The class-wide discussion provides an opportunity for collaborative learning and interaction with your peers. When posting in the discussions, please be concise in order to ease engagement (300 words or fewer).",
+                    "style": "border"
+                  },
+                  { "type": "string", "data": "Join the discussion." },
+                  {
+                    "type": "string",
+                    "data": "",
+                    "style": "border box"
+                  },
+                  {
+                    "type": "button",
+                    "data": "Submit"
+                  }
+                ]
+              }
+            ]
+          },
+
+          {
+            "id": 3,
             "name": "Additional modality examples",
             "content": [
               {
@@ -131,24 +249,60 @@
                     "data": "Didactic written components"
                   },
                   {
-                    "type": "string",
-                    "data": "Didactic written components"
+                    "type": "hyperlink",
+                    "data": "Didactic written components",
+                    "name": "Casebooks",
+                    "style": "li"
+                  },
+                  {
+                    "type": "hyperlink",
+                    "data": "Didactic written components",
+                    "name": "Notes",
+                    "style": "li"
+                  },
+                  {
+                    "type": "hyperlink",
+                    "data": "Didactic written components",
+                    "name": "Resources found",
+                    "style": "li"
                   },
                   {
                     "type": "heading",
                     "data": "Social learning components"
                   },
                   {
-                    "type": "string",
-                    "data": "Social learning components"
+                    "type": "hyperlink",
+                    "data": "Small group discussions",
+                    "name": "Small group discussions",
+                    "style": "li"
+                  },
+                  {
+                    "type": "hyperlink",
+                    "data": "Class-wide discussion",
+                    "name": "Class-wide discussion",
+                    "style": "li"
                   },
                   {
                     "type": "heading",
                     "data": "Engagement and assessment components"
                   },
                   {
-                    "type": "string",
-                    "data": "Engagement and assessment components"
+                    "type": "hyperlink",
+                    "data": "Assigment 1",
+                    "name": "Assigment 1",
+                    "style": "li"
+                  },
+                  {
+                    "type": "hyperlink",
+                    "data": "Assigment 2",
+                    "name": "Assigment 2",
+                    "style": "li"
+                  },
+                  {
+                    "type": "hyperlink",
+                    "data": "Practice quiz",
+                    "name": "Practice quiz",
+                    "style": "li"
                   },
                   {
                     "type": "heading",
@@ -157,7 +311,8 @@
                   {
                     "type": "string",
                     "data": "Creative components"
-                  }
+                  },
+                  { "type": "Carousel", "name": "Carousel", "data": "" }
                 ]
               }
             ]

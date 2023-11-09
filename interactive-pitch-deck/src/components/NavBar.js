@@ -37,6 +37,9 @@ const NavBar = ({
           border: "none",
           cursor: "pointer",
         }}
+        // onMouseOver={(e) => e.target.style.scale = "1.1"}
+        // onMouseOut={(e) => e.target.style.scale = "1"}
+
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

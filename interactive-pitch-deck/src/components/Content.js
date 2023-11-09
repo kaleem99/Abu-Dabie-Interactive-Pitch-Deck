@@ -2,6 +2,8 @@ import BreadCrumbs from "./BreadCrumbs";
 import NavigationBackAndNext from "./NavigationBackAndNext";
 import courseData from "../Content/AppContent.json";
 import ReflectionTable from "./ReflectionTable";
+import ResourceExample from "../PDFs/Resource_example_1.pdf";
+import HorizontalCarousel from "./ImageCarousel";
 const Content = ({
   section,
   setSection,
@@ -19,6 +21,21 @@ const Content = ({
     // transform: "scale(0.8)", // Adjust the scale to fit the container size
   };
   console.log(contentDataSection);
+  const checkBorderBox = (data) => {
+    if (data.style) {
+      if (data.style === "border box") {
+        return {
+          border: "1px solid",
+          padding: "10px",
+          height: "250px",
+          width: "auto",
+        };
+      } else {
+        return { border: "1px solid", padding: "10px 15px 15px 15px" };
+      }
+    }
+    return {};
+  };
   return (
     <div className="Content" style={!navBar ? { width: "100%" } : {}}>
       <div className="InnerContent">
@@ -60,20 +77,36 @@ const Content = ({
                 ? contentDataSection[index].data.map((data, i) =>
                     data.type === "string" ? (
                       <p
-                        style={
-                          data.style
-                            ? { border: "1px solid", padding: "10px" }
-                            : {}
-                        }
-                      >
-                        {data.data}
-                      </p>
-                    ) : data.type === "heading" ? (
+                        style={checkBorderBox(data)}
+                        dangerouslySetInnerHTML={{ __html: data.data }}
+                      ></p>
+                    ) : data.type === "subheading" ? (
                       <h1 className="heading">{data.data}</h1>
+                    ) : data.type === "heading" ? (
+                      <h1 style={{ fontSize: "40px" }} className="heading">
+                        {data.data}
+                      </h1>
                     ) : data.type === "array" ? (
                       data.data.map((line) => (
                         <p dangerouslySetInnerHTML={{ __html: line }}></p>
                       ))
+                    ) : data.type === "button" ? (
+                      <button
+                        style={{ float: "right" }}
+                        className="standardButton"
+                      >
+                        {data.data}
+                      </button>
+                    ) : data.type === "hyperlink" ? (
+                      <div style={{ marginTop: "10px" }}>
+                        <a href={ResourceExample} download={data.data}>
+                          {data.name}
+                        </a>
+                      </div>
+                    ) : data.type === "Carousel" ? (
+                      <HorizontalCarousel />
+                    ) : data.type === "table" ? (
+                      unitSection === 1 && <ReflectionTable />
                     ) : (
                       <div className="iframeContent">
                         <iframe
@@ -86,8 +119,6 @@ const Content = ({
                     )
                   )
                 : ""}
-
-              {unitSection === 1 && <ReflectionTable />}
             </div>
           </div>
           {/* ); */}

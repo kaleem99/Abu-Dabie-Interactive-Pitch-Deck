@@ -49,12 +49,12 @@ const NavigationBackAndNext = ({
           );
         })}
       </div>
-      <img
+      {/* <img
         style={{ marginBottom: "20px" }}
         width={68}
         height={68}
         src={chatBotImage}
-      />
+      /> */}
     </div>
   );
 };
