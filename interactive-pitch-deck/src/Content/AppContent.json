@@ -15,12 +15,20 @@
                 "type": "object",
                 "data": [
                   {
+                    "type": "heading",
+                    "data": "Learning pathway"
+                  },
+                  {
                     "type": "string",
                     "data": "The interactive infographic below showcases the Data Science Learning Pathway, contextualizing the Leadership skill in relation to the role of the Data Science Leader."
                   },
                   {
                     "type": "link",
                     "data": "https://kaleem99.github.io/Hype-Templates/Abu%20Dhabi%20example%20interactive.html"
+                  },
+                  {
+                    "type": "string",
+                    "data": "The prototype learning module that follows is designed around the Leadership skill level 2 competency."
                   }
                 ]
               }
@@ -31,9 +39,24 @@
             "name": "Prototype learning module: Casebook",
             "content": [
               {
-                "name": "Introduction",
+                "name": "",
                 "type": "object",
                 "data": [
+                  {
+                    "type": "string",
+                    "style": "border",
+                    "data": "<b>Learning outcome</b>: Leadership skill level 2<br><br> <li>Lead by example at team level.</li> <li>Encourage and guide others to adopt a point of view, make changes, or take action.</li> <li>Provide a team environment that facilitates relationship building, teamwork, and the development of others.</li>"
+                  },
+                  {
+                    "type": "string",
+                    "data": "<br>"
+                  },
+                  {
+                    "type": "heading",
+                    "style": "border",
+                    "data": "Introduction"
+                  },
+
                   {
                     "type": "string",
                     "name": "",
@@ -104,11 +127,6 @@
                     "data": "https://kaleem99.github.io/Hype-Templates/Abu%20Dhabi%20interactive%20infographic.html"
                   },
                   {
-                    "type": "hyperlink",
-                    "data": "#",
-                    "name": "Click here to download the transcript for the interactive infographic."
-                  },
-                  {
                     "type": "array",
                     "data": [
                       "The five broad categories of ML tools discussed in this course thus far are the following:",
@@ -168,7 +186,17 @@
                 "name": "",
                 "type": "object",
                 "data": [
-                  { "type": "subheading", "data": "Planning your project" },
+                  {
+                    "type": "string",
+                    "style": "border",
+                    "data": "<b>Learning outcome</b>: Leadership skill level 2<br><br> <li>Lead by example at team level.</li> <li>Encourage and guide others to adopt a point of view, make changes, or take action.</li> <li>Provide a team environment that facilitates relationship building, teamwork, and the development of others.</li>"
+                  },
+                  {
+                    "type": "string",
+                    "data": "<br>"
+                  },
+                  { "type": "heading", "data": "Reflection exercise" },
+
                   {
                     "type": "string",
                     "data": "Now that you have a better understanding of how to choose and implement an ML strategy for a particular business project, it is time to engage with this in practice. The table below will guide you through the various steps and considerations required for determining the specific requirements of an ML project. Think about a particular business goal or problem you have encountered in your context and fill out the table based on how you would tackle this challenge with ML."
@@ -177,12 +205,7 @@
                     "type": "string",
                     "data": "This table is also available in the course downloads folder for future reference and to use on projects you encounter throughout your career."
                   },
-                  { "type": "table", "data": "ReflectionTable()" },
-                  {
-                    "type": "hyperlink",
-                    "data": "Resource_example_1.pdf",
-                    "name": "Click here to download the resources."
-                  }
+                  { "type": "table", "data": "ReflectionTable()" }
                 ]
               }
             ]
@@ -195,6 +218,11 @@
                 "name": "",
                 "type": "object",
                 "data": [
+                  {
+                    "type": "string",
+                    "style": "border",
+                    "data": "<b>Learning outcome</b>: Leadership skill level 2<br><br> <li>Lead by example at team level.</li> <li>Encourage and guide others to adopt a point of view, make changes, or take action.</li> <li>Provide a team environment that facilitates relationship building, teamwork, and the development of others.</li>"
+                  },
                   { "type": "heading", "data": "Class-wide discussion" },
                   {
                     "type": "string",
@@ -249,74 +277,117 @@
                 "type": "object",
                 "data": [
                   {
-                    "type": "heading",
+                    "type": "subheading",
+                    "data": "Creative components"
+                  },
+                  {
+                    "type": "string",
+                    "data": "Static graphics examples"
+                  },
+
+                  { "type": "string", "name": "", "data": "<br>" },
+
+                  { "type": "Carousel", "name": "Carousel", "data": "" },
+                  { "type": "string", "name": "", "data": "<br>" },
+                  {
+                    "type": "string",
+                    "name": "Animated graphic examples",
+                    "data": "Animated graphic examples"
+                  },
+                  {
+                    "type": "image",
+                    "name": "Animated gif",
+                    "data": "https://kaleem99.github.io/Hype-Templates/Abu%20Dhabi%20Graph%20Animation%20(3).gif"
+                  },
+
+                  {
+                    "type": "video",
+                    "name": "Animated gif",
+                    "data": "https://kaleem99.github.io/Hype-Templates/Pitch%20for%20Abu%20Dhabi%20motion.mp4"
+                  },
+                  { "type": "string", "name": "", "data": "<br><hr>" },
+
+                  {
+                    "type": "subheading",
                     "data": "Didactic written components"
                   },
                   {
                     "type": "hyperlink",
-                    "data": "Didactic written components",
-                    "name": "Casebooks",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Casebook_example_1.pdf",
+                    "name": "Casebook",
                     "style": "li"
                   },
                   {
                     "type": "hyperlink",
-                    "data": "Didactic written components",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Notes_example_1.pdf",
                     "name": "Notes",
                     "style": "li"
                   },
                   {
                     "type": "hyperlink",
-                    "data": "Didactic written components",
-                    "name": "Resources found",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Lesson_example_1.pdf",
+                    "name": "Lesson",
                     "style": "li"
                   },
                   {
-                    "type": "heading",
+                    "type": "hyperlink",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Resource_example_1.pdf",
+                    "name": "Resource",
+                    "style": "li"
+                  },
+                  { "type": "string", "name": "", "data": "<br><hr>" },
+                  {
+                    "type": "subheading",
                     "data": "Social learning components"
                   },
                   {
                     "type": "hyperlink",
-                    "data": "Small group discussions",
-                    "name": "Small group discussions",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Small%20group%20discussion_example_1.pdf",
+                    "name": "Small group discussion 1",
                     "style": "li"
                   },
                   {
                     "type": "hyperlink",
-                    "data": "Class-wide discussion",
-                    "name": "Class-wide discussion",
-                    "style": "li"
-                  },
-                  {
-                    "type": "heading",
-                    "data": "Engagement and assessment components"
-                  },
-                  {
-                    "type": "hyperlink",
-                    "data": "Assigment 1",
-                    "name": "Assigment 1",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Small%20group%20discussion_example_2.pdf",
+                    "name": "Small group discussion 2",
                     "style": "li"
                   },
                   {
                     "type": "hyperlink",
-                    "data": "Assigment 2",
-                    "name": "Assigment 2",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Class-wide%20discussion_example_1.pdf",
+                    "name": "Class-wide discussion 1",
                     "style": "li"
                   },
                   {
                     "type": "hyperlink",
-                    "data": "Practice quiz",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Class-wide%20discussion_example_2.pdf",
+                    "name": "Class-wide discussion 2",
+                    "style": "li"
+                  },
+                  { "type": "string", "name": "", "data": "<br><hr>" },
+
+                  {
+                    "type": "subheading",
+                    "data": "Assessment components"
+                  },
+                  {
+                    "type": "hyperlink",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Assignment_example_1.pdf",
+                    "name": "Assignment 1",
+                    "style": "li"
+                  },
+                  {
+                    "type": "hyperlink",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Assignment_example_2.pdf",
+                    "name": "Assignment 2",
+                    "style": "li"
+                  },
+                  {
+                    "type": "hyperlink",
+                    "data": "https://kaleem99.github.io/Hype-Templates/PDFs/Practice%20quiz_exmaple_1.pdf",
                     "name": "Practice quiz",
                     "style": "li"
-                  },
-                  {
-                    "type": "heading",
-                    "data": "Creative components"
-                  },
-                  {
-                    "type": "string",
-                    "data": "Creative components"
-                  },
-                  { "type": "Carousel", "name": "Carousel", "data": "" }
+                  }
                 ]
               }
             ]

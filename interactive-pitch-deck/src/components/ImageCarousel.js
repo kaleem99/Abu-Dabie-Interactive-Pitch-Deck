@@ -39,80 +39,80 @@ const HorizontalCarousel = () => {
   const imagesWithText = [
     {
       image: BarGraph1,
-      text: "Description 1",
+      text: "",
     },
     {
       image: BarGraph2,
-      text: "Description 2",
+      text: "",
     },
     {
       image: BarGraph3,
-      text: "Description 3",
+      text: "",
     },
     {
       image: BarGraph5,
-      text: "Description 4",
+      text: "",
     },
     {
       image: BarGraph6,
-      text: "Description 5",
+      text: "",
     },
     {
       image: BarGraph10,
-      text: "Description 6",
+      text: "",
     },
     {
       image: Diagram_example1,
-      text: "Description 7",
+      text: "",
     },
     {
       image: Diagram_example2,
-      text: "Description 8",
+      text: "",
     },
     {
       image: Diagram_example3,
-      text: "Description 9",
+      text: "",
     },
     {
       image: Diagram_example4,
-      text: "Description 10",
+      text: "",
     },
     {
       image: Diagram_example6,
-      text: "Description 11",
+      text: "",
     },
     // Add more images with text
     {
       image: Graph_comparison1,
-      text: "Description 12",
+      text: "",
     },
     {
       image: Infographic_example1,
-      text: "Description 13",
+      text: "",
     },
     {
       image: Line_graph_example1,
-      text: "Description 14",
+      text: "",
     },
     {
       image: Range_graph_example2,
-      text: "Description 15",
+      text: "",
     },
     {
       image: Scatter_graph_example3,
-      text: "Description 16",
+      text: "",
     },
     {
       image: Scatter_graph_example1,
-      text: "Description 17",
+      text: "",
     },
     {
       image: Graph_example1,
-      text: "Description 18",
+      text: "",
     },
     {
       image: Graph_example2,
-      text: "Description 19",
+      text: "",
     },
   ];
 

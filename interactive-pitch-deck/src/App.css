@@ -66,7 +66,7 @@ button {
 .homepageImage {
   width: 50%;
   height: 200px;
-  margin: 100px auto auto;
+  margin: 10% auto;
 }
 
 td {
@@ -96,11 +96,10 @@ td {
   height: auto;
   margin: 20px auto;
 }
-.homepageLearningOutcomesInnerDiv{
+.homepageLearningOutcomesInnerDiv {
   text-align: left;
   padding: 10px;
 }
-.homepageLearningOutcomesInnerDiv > p{
+.homepageLearningOutcomesInnerDiv > p {
   margin-block-start: 10px;
-  
 }

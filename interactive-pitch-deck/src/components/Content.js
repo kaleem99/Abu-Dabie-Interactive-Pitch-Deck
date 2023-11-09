@@ -99,14 +99,30 @@ const Content = ({
                       </button>
                     ) : data.type === "hyperlink" ? (
                       <div style={{ marginTop: "10px" }}>
-                        <a href={ResourceExample} download={data.data}>
+                        <a href={data.data} target="_blank">
                           {data.name}
                         </a>
                       </div>
                     ) : data.type === "Carousel" ? (
                       <HorizontalCarousel />
                     ) : data.type === "table" ? (
-                       <ReflectionTable />
+                      <ReflectionTable />
+                    ) : data.type === "image" ? (
+                      <div style={{ width: "800px", margin: "auto" }}>
+                        <img style={{ width: "800px" }} src={data.data} />
+                      </div>
+                    ) : data.type === "video" ? (
+                      <video
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          border: "1px solid",
+                        }}
+                        autoPlay
+                        controls
+                      >
+                        <source src={data.data} type="video/mp4" />
+                      </video>
                     ) : (
                       <div className="iframeContent">
                         <iframe

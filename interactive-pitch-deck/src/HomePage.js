@@ -11,16 +11,26 @@ const HomePage = ({ setState }) => {
       {/* <h1>Homepage</h1> */}
 
       <div className="homepageImage">
-        {/* <img width={"100%"} height={"150px"} src={svgImage} /> */}
-        <h1 className="homepageHeading">Prototype Pathway</h1>
-        <span className="homepageSubheading">
-          Welcome to this prototype course exploring a data- and people-driven
-          approach to implement machine learning technologies in any
-          organization.<br></br><br></br>
-          Click below to explore the learning pathway, a prototype learning
-          module featuring three components (including an interactive
-          infographic), and additional learning design modalities.
-        </span>
+        <img width={"100%"} height={"120px"} src={svgImage} />
+        {/* <h1 className="homepageHeading">Prototype Pathway</h1> */}
+        <div style={{ marginTop: "20px" }}>
+          <span className="homepageSubheading">
+            Welcome to this prototype course exploring a data- and people-driven
+            approach to implement machine learning technologies in any
+            organization.<br></br>
+            <br></br>
+            Click below to explore the learning pathway, a prototype learning
+            module featuring three components (including an interactive
+            infographic), and additional learning design modalities.
+          </span>
+        </div>
+        <button
+        style={{ background: "#1c1d21", marginTop: "30px" }}
+        className="standardButton HomePageButton"
+        onClick={() => setState("")}
+      >
+        Proceed
+      </button>
       </div>
       {/* <div className="homepageLearningOutcomes">
         <div className="homepageLODiv">
@@ -35,13 +45,7 @@ const HomePage = ({ setState }) => {
           ))}
         </div>
       </div> */}
-      <button
-        style={{ background: "#1c1d21", marginTop: "50px" }}
-        className="standardButton HomePageButton"
-        onClick={() => setState("")}
-      >
-        Proceed
-      </button>
+   
     </div>
   );
 };

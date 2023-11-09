@@ -113,6 +113,12 @@
   overflow-y: auto;
   padding: 10px;
 }
+.mainInnerContent::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+.mainInnerContent::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+}
 .mainInnerContentHeading {
   font-size: 40px;
   font-weight: 600;
@@ -138,6 +144,7 @@
   /* margin-left: -180px; */
   /* margin-top: -105px; */
 }
+
 .hyperLink {
   color: black;
   font-weight: bold;
@@ -191,13 +198,14 @@
   line-height: normal;
   width: 489px;
   height: 58px;
+  margin-top: 20px;
 }
-.ImageCarousel{
+.ImageCarousel {
   width: auto;
-  height: 250px;
+  height: 400px;
   margin: auto;
 }
-.ImageCarouselDiv{
+.ImageCarouselDiv {
   margin: auto;
   width: 500px;
   height: auto;
@@ -205,11 +213,18 @@
   text-align: center;
   /* padding-bottom: 100px; */
 }
-/* .slick-arrow, .slick-prev{
-  background-color: black !important;
-  left: 10% !important;
+.slick-prev {
+  background-color: #b7c0c3 !important;
+  left: 40% !important;
+  position: absolute !important;
+  top: 94.5% !important;
+  width: 25px !important;
+  height: 25px !important;
 }
-.slick-arrow, .slick-next{
-  background-color: black !important;
-  right: 10% !important;
-} */
+.slick-next {
+  background-color: #b7c0c3 !important;
+  position: relative !important;
+  left: 58% !important;
+  width: 25px !important;
+  height: 25px !important;
+}

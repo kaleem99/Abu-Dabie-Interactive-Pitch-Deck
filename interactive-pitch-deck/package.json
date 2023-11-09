@@ -2,7 +2,7 @@
   "name": "interactive-pitch-deck",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kaleem99.github.io/Abu-Dhabi-Interactive-Pitch-Deck",
+  "homepage": "https://kaleem99.github.io/Prototype-Pathway",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

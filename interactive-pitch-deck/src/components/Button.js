@@ -10,10 +10,9 @@ const Button = ({
   setIndex,
   contentDataSection,
 }) => {
-  
   const nextAndBack = (type) => {
     const contentSections = contentDataSection;
-    console.log(index, contentDataSection)
+    console.log(index, contentDataSection);
     if (type === "Next") {
       if (index < contentSections.length - 1) {
         setIndex(index + 1);
