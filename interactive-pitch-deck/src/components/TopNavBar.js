@@ -20,13 +20,13 @@ const settingSectionNames = [
   </g>
 </svg>`,
 ];
-const TopNavBar = ({ setState }) => {
+const TopNavBar = ({ setState, setUnitSection, setIndex }) => {
   return (
     <div className="topNavBar">
       <div className="NavBarSectionNames">
         {navNames.map((section, i) => (
           <span
-            onClick={() => i === 0 && setState("Home")}
+            onClick={() => i === 0 && window.location.reload()}
             className="spanSectionNames"
           >
             {section}

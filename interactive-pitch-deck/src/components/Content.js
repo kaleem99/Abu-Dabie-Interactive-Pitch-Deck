@@ -12,6 +12,7 @@ const Content = ({
   setIndex,
   unitSection,
   navBar,
+  setUnitSection,
 }) => {
   const iframeStyle = {
     width: "100%", // Fixed width of the website
@@ -20,7 +21,6 @@ const Content = ({
     border: "none", // No border to keep consistent with the container
     // transform: "scale(0.8)", // Adjust the scale to fit the container size
   };
-  console.log(contentDataSection);
   const checkBorderBox = (data) => {
     if (data.style) {
       if (data.style === "border box") {
@@ -50,7 +50,7 @@ const Content = ({
           {/* {contentDataSection.content.map((contentDataSection[index], index) => { */}
           {/* return ( */}
           <div className="innerContentAndHeading">
-            {contentDataSection[index].name.length === 2 ? (
+            {/* {contentDataSection[index].name.length === 2 ? (
               contentDataSection[index].name.map((itemName, i) => (
                 <div>
                   <span
@@ -66,7 +66,7 @@ const Content = ({
               <span className="mainInnerContentHeading">
                 {contentDataSection[index].name}
               </span>
-            )}
+            )} */}
 
             <div className="mainInnerContentData">
               {contentDataSection[index].type === "string"
@@ -98,7 +98,7 @@ const Content = ({
                         {data.data}
                       </button>
                     ) : data.type === "hyperlink" ? (
-                      <div style={{ marginTop: "10px" }}>
+                      <div style={{ marginTop: "10px" }}> 
                         <a href={data.data} target="_blank">
                           {data.name}
                         </a>
@@ -143,6 +143,8 @@ const Content = ({
       </div>
       <NavigationBackAndNext
         setSection={setSection}
+        setUnitSection={setUnitSection}
+        unitSection={unitSection}
         section={section}
         setIndex={setIndex}
         index={index}

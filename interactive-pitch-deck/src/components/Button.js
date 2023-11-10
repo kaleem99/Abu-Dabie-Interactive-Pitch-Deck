@@ -1,5 +1,5 @@
 import "./styles.css";
-
+import AppContent from "../Content/AppContent.json";
 const Button = ({
   name,
   check,
@@ -9,17 +9,37 @@ const Button = ({
   index,
   setIndex,
   contentDataSection,
+  setUnitSection,
+  unitSection,
 }) => {
   const nextAndBack = (type) => {
     const contentSections = contentDataSection;
-    console.log(index, contentDataSection);
+    const courseSections = AppContent.courseSections[0].unit.sections;
+
     if (type === "Next") {
       if (index < contentSections.length - 1) {
         setIndex(index + 1);
+      } else {
+        if (unitSection < courseSections.length - 1) {
+          const nextIndex = unitSection + 1;
+          setUnitSection(nextIndex);
+          setSection(courseSections[nextIndex].name);
+          setIndex(0);
+        }
       }
     } else {
       if (index > 0) {
         setIndex(index - 1);
+      } else {
+        if (unitSection > 0) {
+          const nextIndex = unitSection - 1;
+          setUnitSection(nextIndex);
+
+          const lastSubSection = courseSections[nextIndex].content.length - 1;
+          setIndex(lastSubSection);
+
+          setSection(courseSections[nextIndex].name);
+        }
       }
     }
   };

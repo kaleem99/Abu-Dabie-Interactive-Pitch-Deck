@@ -9,6 +9,8 @@ const NavigationBackAndNext = ({
   setIndex,
   courseData,
   contentDataSection,
+  setUnitSection,
+  unitSection
 }) => {
   return (
     <div className="NavigationBackAndNext">
@@ -45,6 +47,8 @@ const NavigationBackAndNext = ({
               index={index}
               setIndex={setIndex}
               contentDataSection={contentDataSection}
+              setUnitSection={setUnitSection}
+              unitSection={unitSection}
             />
           );
         })}

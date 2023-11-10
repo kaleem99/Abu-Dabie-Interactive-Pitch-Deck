@@ -1,7 +1,7 @@
 import { BsDot } from "react-icons/bs";
 
 const BreadCrumbs = ({ courseData, section, contentDataSection, index }) => {
-  console.log(section);
+
   return (
     <div className="BreadCrumbsMenu">
       {courseData.courseSections.map((data) => (

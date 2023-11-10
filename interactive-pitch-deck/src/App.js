@@ -19,10 +19,15 @@ function App() {
   );
   const contentDataSection =
     courseData.courseSections[0].unit.sections[unitSection].content;
-  console.log(contentDataSection);
   return (
     <div className="App">
-      {state === "" && <TopNavBar setState={setState} />}
+      {state === "" && (
+        <TopNavBar
+          setIndex={setIndex}
+          setUnitSection={setUnitSection}
+          setState={setState}
+        />
+      )}
       <div className="AppContent">
         {state === "Home" ? (
           <HomePage setState={setState} />
@@ -65,6 +70,7 @@ function App() {
               setIndex={setIndex}
               unitSection={unitSection}
               navBar={navBar}
+              setUnitSection={setUnitSection}
             />{" "}
           </>
         )}
